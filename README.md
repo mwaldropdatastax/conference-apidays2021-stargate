@@ -153,14 +153,6 @@ Locate the `SCHEMAS` part of the API
 - Provide your token in the field `X-Cassandra-Token`
 - Click on `Execute`
 
-**✅ Creating a keyspace2** : 
-
-- [createKeyspace]
-- Data
-```json
-{"name": "keyspace2","replicas": 3}
-```
-
 **✅ Creating a Table** : 
 
 - [addTable]
