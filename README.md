@@ -30,15 +30,17 @@ Follow this [guide](https://docs.datastax.com/en/astra/docs/creating-your-astra-
 
 You will find below which values to enter for each field.
 
-- **For the database name** - `free_db.` While Astra allows you to fill in these fields with values of your own choosing, please follow our recommendations to ensure the application runs properly.
+- **For the database name** - `workshop` 
 
-- **For the keyspace name** - `keyspace1`. It's really important that you use the name "free" for the code to work.
+- **For the keyspace name** - `keyspace1`. 
 
 _You can technically use whatever you want and update the code to reflect the keyspace. This is really to get you on a happy path for the first run._
 
 - **For provider and region**: Choose and provider (either GCP or AWS). Region is where your database will reside physically (choose one close to you or your users).
 
 - **Create the database**. Review all the fields to make sure they are as shown, and click the `Create Database` button.
+
+
 
 You will see your new database `pending` in the Dashboard.
 
