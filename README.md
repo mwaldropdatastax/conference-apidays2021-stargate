@@ -151,7 +151,7 @@ Now launch the swagger UI
 
 Locate the `SCHEMAS` part of the API
 
-![image](pics/swagger-schemas.png?raw=true)
+![image](pics/swaggerSchemas.png?raw=true)
 
  Local `listAllKeyspaces`
 
@@ -159,11 +159,13 @@ Locate the `SCHEMAS` part of the API
 - Provide your token in the field `X-Cassandra-Token`
 - Click on `Execute`
 
+![image](pics/swaggerListKeyspaces.png?raw=true)
+
 **✅ Creating a Table** : 
 
 - [addTable]
 - X-Cassandra-Token: `<your_token>`
-- keyspace: `keyspace2`
+- keyspace: `keyspace1`
 - Data
 ```json
 {
