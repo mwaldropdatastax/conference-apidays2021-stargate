@@ -243,6 +243,13 @@ locate the Document part in the Swagger UI
 
 **✅ Create a document** :
 
+
+- [createNewDocument]
+- X-Cassandra-Token: `<your_token>`
+- namespace-id: `keyspace1`
+- collection-id: `videos
+- body`
+
 ```json
 {
    "videoid":"e466f561-4ea4-4eb7-8dcc-126e0fbfd573",
