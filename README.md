@@ -364,35 +364,15 @@ This walkthrough has been realized using the [GraphQL Quick Start](https://starg
 **✅ Open GraphQL Playground** :
 
 Open the playground
-![image](pics/launch-graphql.png?raw=true)
+![image](pics/graphQLPlayground.png?raw=true)
 
 **👁️ Expected output**
-![image](pics/playground-home.png?raw=true)
-
-**✅ Creating a keyspace** :
-
-Before you can start using the GraphQL API, you must first create a Cassandra keyspace and at least one table in your database. If you are connecting to a Cassandra database with existing schema, you can skip this step.
-
-Inside the GraphQL playground, navigate to http://localhost:8080/graphql-schema and create a keyspace by executing the following mutation:
-
-```
-mutation createKeyspaceLibrary {
-  createKeyspace(name:"library", replicas: 1)
-}
-```
-
-Add the auth token to the HTTP Headers box in the lower lefthand corner:
-```
-{
-  "x-cassandra-token":"7c37bda5-7360-4d39-96bc-9765db5773bc"
-}
-```
-
-**👁️ Expected output**
-
-![image](pics/graphql-createkeyspace.png?raw=true)
+![image](pics/graphQLHome.png?raw=true)
 
 **✅ Creating a Table** :
+
+Update the HTTP Headers in the lower left corner with your token
+Enter the following query to create two tables:
 
 - Use this query
 ```
@@ -422,7 +402,7 @@ mutation {
 
 **👁️ Expected output**
 
-![image](pics/graphql-createtables.png?raw=true)
+![image](pics/graphQLCreateTable.png?raw=true)
 
 **✅ Populating Table** :
 
