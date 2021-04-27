@@ -208,9 +208,9 @@ Now Locate the `DATA` part of the API
 
 **✅ Insert a row** : 
 
-- [createRow]
+- [addRow]
 - X-Cassandra-Token: `<your_token>`
-- keyspace: `keyspace2`
+- keyspace: `keyspace1`
 - table: `users`
 - Data
 ```json
@@ -228,7 +228,7 @@ Now Locate the `DATA` part of the API
 
 - [getAllRows]
 - X-Cassandra-Token: `<your_token>`
-- keyspace: `keyspace2`
+- keyspace: `keyspace1`
 - table: `users`
 
 [🏠 Back to Table of Contents](#table-of-content)
@@ -240,40 +240,6 @@ This walkthrough has been realized using the [Quick Start](https://stargate.io/d
 locate the Document part in the Swagger UI
 
 ![image](pics/swagger-docs.png?raw=true)
-
-
-**✅ Creating a namespace** :
-
-- Access [createNamespace]
-- Fill with Header `X-Cassandra-Token` with `<your_token>`
-- Use this payload as JSON
-```json
-{ "name": "namespace1", "replicas": 3 }
-```
-
-**✅ Checking namespace existence** :
-
-- Access [getAllNamespaces]
-- Fill with Header `X-Cassandra-Token` with `<your_token>`
-- For `raw` you can use either `true` or `false`
-
-**👁️ Expected output**
-```json
-{
-  "data": [
-    { "name": "system_distributed" },
-    { "name": "system" },
-    { "name": "data_endpoint_auth"},
-    { "name": "keyspace1" },
-    { "name": "namespace1"},
-    { "name": "system_schema"},
-    { "name": "keyspace2" },
-    { "name": "stargate_system"},
-    { "name": "system_auth" },
-    { "name": "system_traces"}
-  ]
-}
-```
 
 **✅ Create a document** :
 
