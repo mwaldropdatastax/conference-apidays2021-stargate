@@ -247,7 +247,7 @@ locate the Document part in the Swagger UI
 - [createNewDocument]
 - X-Cassandra-Token: `<your_token>`
 - namespace-id: `keyspace1`
-- collection-id: `videos
+- collection-id: `videos`
 - body
 
 ```json
@@ -277,7 +277,7 @@ locate the Document part in the Swagger UI
 - [searchDocumentsInCollection]
 - X-Cassandra-Token: `<your_token>`
 - namespace-id: `keyspace1`
-- collection-id: `videos
+- collection-id: `videos`
 
 **👁️ Expected output**:
 ```json
@@ -329,7 +329,7 @@ locate the Document part in the Swagger UI
 - [searchDocumentsInCollection]
 - X-Cassandra-Token: `<your_token>`
 - namespace-id: `keyspace1`
-- collection-id: `videos
+- collection-id: `videos`
 - where
 
 ```JSON
