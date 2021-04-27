@@ -327,33 +327,12 @@ locate the Document part in the Swagger UI
 }
 ```
 
-**✅ Retrieve 1 document** :
-
-```bash
-curl -L \
--X GET 'localhost:8082/v2/namespaces/namespace1/collections/videos/5d746e40-97cf-490b-ab0d-68cfbc5d2ef3' \
---header "X-Cassandra-Token: $AUTH_TOKEN" \
---header 'Content-Type: application/json'
-```
-
-**👁️ Expected output**:
-```json
-{
-  "documentId":"5d746e40-97cf-490b-ab0d-68cfbc5d2ef3",
-  "data":{
-     "email":"clunven@sample.com",
-     "formats":{"mp4":{"height":1,"width":1},"ogg":{"height":1,"width":1}},
-     "frames":[1,2,3,4],
-     "tags":["cassandra","accelerate","2020"],
-     "title":"A Second videos",
-     "upload":"2020-02-26 15:09:22 +00:00",
-     "url":"http://google.fr",
-     "videoid":"e466f561-4ea4-4eb7-8dcc-126e0fbfd573"
-   }
-}
-```
-
 **✅ Search for document by properties** :
+- [searchDocumentsInCollection]
+- X-Cassandra-Token: `<your_token>`
+- namespace-id: `keyspace1`
+- collection-id: `videos
+- body
 
 ```JSON
 {"email":
