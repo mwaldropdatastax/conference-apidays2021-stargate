@@ -278,8 +278,6 @@ locate the Document part in the Swagger UI
 - X-Cassandra-Token: `<your_token>`
 - namespace-id: `keyspace1`
 - collection-id: `videos
-- body
-
 
 **👁️ Expected output**:
 ```json
@@ -332,7 +330,7 @@ locate the Document part in the Swagger UI
 - X-Cassandra-Token: `<your_token>`
 - namespace-id: `keyspace1`
 - collection-id: `videos
-- body
+- where
 
 ```JSON
 {"email":
