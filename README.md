@@ -426,15 +426,9 @@ mutation insert2Books {
 }
 ```
 
-- Don't forget to update the header again
-```
-{
-  "x-cassandra-token":"7c37bda5-7360-4d39-96bc-9765db5773bc"
-}
-```
 **👁️ Expected output**
 
-![image](pics/graphql-insertdata.png?raw=true)
+![image](pics/graphQLUpdate.png?raw=true)
 
 
 **✅ Read data** :
@@ -453,7 +447,7 @@ query oneBook {
 
 **👁️ Expected output**
 
-![image](pics/graphql-readdata.png?raw=true)
+![image](pics/graphQLquery.png?raw=true)
 
 [🏠 Back to Table of Contents](#table-of-content)
 
