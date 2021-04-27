@@ -205,8 +205,6 @@ Locate the `SCHEMAS` part of the API
 
 Now Locate the `DATA` part of the API
 
-**👁️ Expected output**
-![image](pics/astra-data.png?raw=true)
 
 **✅ Insert a row** : 
 
