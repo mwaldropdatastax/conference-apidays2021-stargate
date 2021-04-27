@@ -40,11 +40,11 @@ _You can technically use whatever you want and update the code to reflect the ke
 
 - **Create the database**. Review all the fields to make sure they are as shown, and click the `Create Database` button.
 
-
+![image](pics/createDB-screen.png?raw=true)
 
 You will see your new database `pending` in the Dashboard.
 
-![my-pic](https://github.com/datastaxdevs/shared-assets/blob/master/astra/dashboard-pending-1000-update.png?raw=true)
+![image](pics/pendingDB.png?raw=true)
 
 The status will change to `Active` when the database is ready, this will only take 2-3 minutes. You will also receive an email when it is ready.
 
@@ -134,13 +134,17 @@ To use the API we will need a token please create a token following the instruct
 
 ✅ [Create a token for your app](https://docs.datastax.com/en/astra/docs/manage-application-tokens.html) to use in the settings screen
 
+Astra provides a variety of roles that you can use to manage access.  For this workshop, we will use API Admin Svc Acct
+![image](pics/createToken.png?raw=true)
+
+
 Copy the token value (eg `AstraCS:KDfdKeNREyWQvDpDrBqwBsUB:ec80667c....`) in your clipboard and save the CSV this value would not be provided afterward.
 
 **👁️ Expected output**
-![image](pics/astra-token.png?raw=true)
+![image](pics/copyToken.png?raw=true)
 
 Now launch the swagger UI
-![image](pics/launch-swagger.png?raw=true)
+![image](pics/launchSwagger.png?raw=true)
 
 
 **✅ List keyspaces** : 
