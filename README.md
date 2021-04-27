@@ -248,7 +248,7 @@ locate the Document part in the Swagger UI
 - X-Cassandra-Token: `<your_token>`
 - namespace-id: `keyspace1`
 - collection-id: `videos
-- body`
+- body
 
 ```json
 {
@@ -274,16 +274,48 @@ locate the Document part in the Swagger UI
 ```
 
 **✅ Retrieve documents** :
+- [searchDocumentsInCollection]
+- X-Cassandra-Token: `<your_token>`
+- namespace-id: `keyspace1`
+- collection-id: `videos
+- body
 
-```bash
-curl --location \
---request GET 'localhost:8082/v2/namespaces/namespace1/collections/videos?page-size=3' \
---header "X-Cassandra-Token: $AUTH_TOKEN" \
---header 'Content-Type: application/json'
-```
 
 **👁️ Expected output**:
 ```json
+{
+  "data": {
+    "e8104983-3e1c-4b0d-b66d-853f069996b5": {
+      "email": "clunven@sample.com",
+      "formats": {
+        "mp4": {
+          "height": 1,
+          "width": 1
+        },
+        "ogg": {
+          "height": 1,
+          "width": 1
+        }
+      },
+      "frames": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "tags": [
+        "cassandra",
+        "accelerate",
+        "2020"
+      ],
+      "title": "A Second videos",
+      "upload": "2020-02-26 15:09:22 +00:00",
+      "url": "http://google.fr",
+      "videoid": "e466f561-4ea4-4eb7-8dcc-126e0fbfd573"
+    }
+  }
+}
+
 {
   "data":{
     "5d746e40-97cf-490b-ab0d-68cfbc5d2ef3":{
