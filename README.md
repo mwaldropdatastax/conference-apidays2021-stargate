@@ -378,7 +378,7 @@ Enter the following query to create two tables:
 ```
 mutation {
   books: createTable(
-    keyspaceName:"library",
+    keyspaceName:"keyspace1",
     tableName:"books",
     partitionKeys: [ # The keys required to access your data
       { name: "title", type: {basic: TEXT} }
@@ -388,7 +388,7 @@ mutation {
     ]
   )
   authors: createTable(
-    keyspaceName:"library",
+    keyspaceName:"keyspace1",
     tableName:"authors",
     partitionKeys: [
       { name: "name", type: {basic: TEXT} }
@@ -408,7 +408,7 @@ mutation {
 
 Any of the created APIs can be used to interact with the GraphQL data, to write or read data.
 
-First, let’s navigate to your new keyspace `library` inside the playground. Change tab to `graphql` and pick url `/graphql/library`.
+First, let’s navigate to your new keyspace `keyspace1` inside the playground. Change tab to `graphql` and pick url `/graphql/keyspace1`.
 
 - Use this query
 ```
